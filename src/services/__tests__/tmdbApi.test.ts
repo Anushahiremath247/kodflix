@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import axios from 'axios';
+import type { AxiosInstance } from 'axios';
 import {
   getTrendingMovies,
   getPopularMovies,
@@ -11,7 +12,6 @@ import {
 } from '../tmdbApi';
 
 vi.mock('axios');
-
 const mockedAxios = vi.mocked(axios);
 
 describe('TMDB API Service', () => {

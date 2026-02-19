@@ -1,13 +1,11 @@
 import React from 'react';
-import { useAuth } from '../../contexts/AuthContext';
 import { useMovie } from '../../contexts/MovieContext';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import MovieRow from './MovieRow';
-import { Film, LogOut } from 'lucide-react';
+import { Film } from 'lucide-react';
 
 const Home: React.FC = () => {
-  const { state: authState, logout } = useAuth();
   const { state: movieState } = useMovie();
 
   return (
